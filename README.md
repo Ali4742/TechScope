@@ -1,1 +1,1 @@
-Assignment for front end development
+TechScope
