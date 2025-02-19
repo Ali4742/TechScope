@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <!--Links to the external CSS file-->
+    <link rel="stylesheet" href="styles.css">
+
+    <head>
+        <!--The title that appears in the brower tab-->
+        <title>Tech Scope</title>
+        
+        <!--Links to the external JavaScript file-->
+        <script src="scripts.js"></script>
+    </head>
+
+    <body>
+        <!-- The header section for the logo and title-->
+        <header>
+            <!--Picture of the logo on the left of the page-->
+            <img src="logo.png" alt="logo" style="width: 10%; float: left;">
+            
+            <!--Title of the website-->
+            <h1>Tech Scope</h1>
+            
+            <!--Description of the website-->
+            <p>The latest video games news and reviews</p>
+            
+            <!--Links to the sign up page-->
+            <h3><a href="signup.html">Sign up</a></h3>
+        </header>
+
+        <!--Menu bar with links to the different pages-->
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="xboxpage.html">Xbox</a></li>
+                <li><a href="ps5page.html">Playstation</a></li>
+                <li><a href="switchpage.html">Nintendo</a></li>
+            </ul>
+        </nav>
+
+        <!--Header explaining the form-->
+        <h2>Create an account to receive updates about the latest console news </h2>
+        
+        <!--Form that calls the JavaScript function when the user submits-->
+        <form name="signupForm" onsubmit="return validateForm()">
+            <!--A text box to enter your first name-->
+            <fieldset>
+                First Name: <input type="text" name="fname"/><br>
+            </fieldset><br>
+            
+            <!--text box for surname-->
+            <fieldset>
+                Surname: <input type="text" name="lname"/><br>
+            </fieldset>
+            
+            <!--text box for  username-->
+            <fieldset>
+                Username: <input type="text" name="username"/><br>
+            </fieldset><br>
+            
+            <!--text box for your password that shows hidden-->
+            <fieldset>
+                Password: <input type="password" name="Password"/><br>
+            </fieldset><br>
+            
+            <!--Shows a calendar to select your birthday-->
+            <fieldset>
+                Birthday: <input type="date" id="birthday" name="birthday"><br><br>
+            </fieldset><br>
+            
+            <!--text box for your email-->
+            <fieldset>
+                Email: <input type="text" name="email"/><br>
+            </fieldset><br>
+            
+            <!--text box for your phone number-->
+            <fieldset>
+                Phone Number: <input type="text" name="phonenumber"/><br>
+            </fieldset><br>
+            
+            <!--Button to submit the form-->
+            <fieldset>
+                <p>Thank you for signing up</p>
+                <input type="submit" id="submit" name="submit"><br>
+            </fieldset>
+        </form>
+    </body>
+</html>

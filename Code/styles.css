@@ -1,0 +1,138 @@
+/* Styling for the body section */
+body {
+    font-family: Arial; /* Font is Arial */
+    background-color: lightblue; /*background colour is light blue*/
+    margin: 0; /* Remove the margin and padding*/
+    padding: 0;
+    color: black; /* Set text color to black and move it to the center*/
+    text-align: center;
+}
+
+/*Styling for the paragraphs*/
+p {
+    font-size: 20px; /*Font size of the paragraphs*/
+    text-align: center; /*Text is in center and black*/
+    color: black;
+}
+
+/*Styling for the first heading*/
+h1 {
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Styling for the second heading*/
+h2 {
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Styling for the third heading*/
+h3 {
+    text-align: right;
+    margin: 30px; /*Margin around the text*/
+}
+
+/*Styling for the links*/
+a:link {
+    text-decoration: underline; /*Links show underlined and in blue*/
+    color: blue;
+}
+
+/*Links you have clicked on*/
+a:visited {
+    color: blue;
+}
+
+/*Styling for the navigation bar*/
+nav {
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+/*Styling for button in the navigation bar*/
+nav ul li {
+    display: inline; /*Display the buttons on the same line*/
+    margin: 40px;
+    color: black;
+    text-decoration: none; /*Set the font size and colour*/
+    font-size: 28px;
+    text-align: center;
+}
+
+/*Styling for content section*/
+.content {
+    display: flex; /*Create a flex box*/
+    flex-wrap: wrap; /*Goes onto the next line*/
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*Changes for a smaller screen*/
+@media screen and (max-width: 590px){
+    .content{
+        display: list-item; /*make the items a normal list when the screen is smaller*/
+    }
+    nav ul li {
+        display: list-item;
+    }
+}
+
+/*Styling for the individual posts*/
+.post {
+    background-color: white;
+    width: 30%; /*Make the box smaller*/
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px; /*Make the box rounder*/
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+
+/*Styling for the image in the post*/
+.post img {
+    width: 80%; /*Make the image smaller*/
+}
+
+/*Styling for the heading of the posts*/
+.post h2 {
+    font-size: 24px;
+    color: grey; /*Sets a colour for the text*/
+}
+
+/*Styling for the paragraphs in the post*/
+.post p {
+    font-size: 16px;
+    color: grey;
+}
+
+/*Styling for the bottom footer*/
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Styling for the Xbox section*/
+.xboxcont {
+    background: white;
+    margin: 100px;
+    padding: 10px; /*Add a margin*/
+    margin-top: 20px;
+    border-radius: 50px; /*Make the border bigger*/
+}
+
+/* Styling for the pros section*/
+.pros {
+    background: white;
+    margin: 100px; /*Add a margin*/
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
